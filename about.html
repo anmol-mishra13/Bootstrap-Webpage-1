@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .affix {
+            top: 0;
+            width: 100%;
+            position: fixed;
+            z-index: 10;
+        }
+
+        .display-1 {
+            font-size: 6rem;
+        }
+
+        .navbar-default .navbar-nav>.active>a,
+        .navbar-default .navbar-nav>.active>a:focus,
+        .navbar-default .navbar-nav>.active>a:hover {
+            background-color: #e7e7e7 !important;
+        }
+
+        .display-2 {
+            font-size: 3rem;
+        }
+
+        .txt {
+            font-size: 2rem;
+        }
+
+        .navbar {
+            margin-bottom: 0px;
+        }
+
+        .myNav {
+            background-color: lightblue;
+            color: black;
+            border-radius: 0;
+        }
+
+        .popover {
+            width: 100%;
+        }
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+        .vertical-align-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-content {
+    width:inherit;
+    height:inherit;
+    margin: 0 auto;
+}
+        
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">BootstrapTutorial</a>
+        </div>
+        <div class="collapse navbar-collapse" id="collapse-1">
+            <ul class="nav navbar-nav pull-right">
+                <li class="active"><a href="#" style="color:#fff" title="Bootstrap" data-toggle="popover"
+                        data-trigger="focus" data-content="Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites.
+                    Bootstrap 5 is the newest version of Bootstrap" data-placement="bottom">About Us</a></li>
+                <li><a href="#" style="color:#fff">Explore</a></li>
+                <li><a href="#" style="color:#fff">Support</a></li>
+                <li><a href="#" style="color:#fff">For buisness</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="https://source.unsplash.com/1600x400/?coding,python" class="img-fluid"
+                    style="background-repeat: no-repeat;">
+            </div>
+        </div>
+        <nav class="navbar navbar-default myNav" data-spy="affix" data-offset-top="197">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapse-2">
+                <ul class="nav navbar-nav">
+                    <li><a href="#section1" style="color: black;">Home</a></li>
+                    <li><a href="#section2" style="color: black;">Versions</a></li>
+                    <li><a href="#section3" style="color: black;">Features</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-success">Search</button>
+
+                    </form>
+                    <li><a href="#" style="color: black;"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </nav>
+
+    <div id="section1" class="container-fluid">
+        <div class="row">
+            <div class="col-md-7">
+                <h1 class="display-1">Build fast, responsive sites with Bootstrap </h1>
+                <p class="txt"> Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
+                    most popular
+                    front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+                    extensive prebuilt components, and powerful JavaScript plugins. </p>
+                <button id="btnSubmit" type="button" class="btn btn-warning btn-lg">Get
+                    Started</button>
+                <button id="btnAlert" type="button" class="btn btn-default btn-lg">Advanced</button> <br><br>
+                <div id="myAlert" class="alert alert-danger collapse" role="alert">
+                    <a href="#" class="close" data-dismiss="alert">&times;</a> Before Getting Started you need to
+                    <a href="login.html" class="alert-link"> Login/Sign Up </a> in your account.
+                </div>
+
+                <div id="showAlert" class="alert alert-success collapse" role="alert">
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                    <h4 class="alert-heading">Advanced!</h4>
+                    <p>An appendix of hosted documentation for nearly every release of Bootstrap, from v1 through v5.You
+                        will be getting the all of examples of bootstrap of all the versions.</p>
+                    <hr>
+                    <p class="mb-0">Designed and built with all the love in the world by the Bootstrap team with the
+                        help of our contributors.</p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <br><br>
+
+                <img class="img-thumbnail" src="about.PNG" height="200" width="400"><br><br>
+                <a data-target="#myModal" role="button" class="btn btn-lg " style="background-color: #6f42c1; color: white;" data-toggle="modal"><span
+                        class="	glyphicon glyphicon-download-alt"></span>  Download</a>
+
+                <div class="modal fade" id="myModal">
+                    <div class="vertical-alignment-helper">
+                    <div class="modal-dialog vertical-align-center">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title text-center"><strong>Download Bootstrap Files</strong></h4>
+                                <div class=modal-body>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="load" style="width:0%">
+                                          0%
+                                        </div>
+                                      </div>
+                                    
+                                        <button type="button" id="downloadCompleted" class="btn btn-primary mt-2 pull-right" autocomplete="off">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+        <h1 class="text-center"> History </h1>
+        <p class="txt"> Originally created by a designer and a developer at Twitter, Bootstrap has become one of the
+            most
+            popular
+            front-end frameworks and open source projects in the world.
+
+            Bootstrap was created at Twitter in mid-2010 by @mdo and @fat. Prior to being an open-sourced framework,
+            Bootstrap was known as Twitter Blueprint. A few months into development, Twitter held its first Hack Week
+            and the project exploded as developers of all skill levels jumped in without any external guidance. It
+            served as the style guide for internal tools development at the company for over a year before its public
+            release, and continues to do so today.
+
+            Originally released on Friday, August 19, 2011, we’ve since had over twenty releases, including two major
+            rewrites with v2 and v3. With Bootstrap 2, we added responsive functionality to the entire framework as an
+            optional stylesheet. Building on that with Bootstrap 3, we rewrote the library once more to make it
+            responsive by default with a mobile first approach.
+
+            With Bootstrap 4, we once again rewrote the project to account for two key architectural changes: a
+            migration to Sass and the move to CSS’s flexbox. Our intention is to help in a small way to move the web
+            development community forward by pushing for newer CSS properties, fewer dependencies, and new technologies
+            across more modern browsers.
+        </p>
+        <p><strong>Early Beginnings</strong> <br> Bootstrap, originally named Twitter Blueprint, was developed by Mark
+            Otto and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools. Before
+            Bootstrap, various libraries were used for interface development, which led to inconsistencies and a high
+            maintenance burden. According to Twitter developer Mark Otto:
+
+            A super small group of developers and I got together to design and build a new internal tool and saw an
+            opportunity to do something more. Through that process, we saw ourselves build something much more
+            substantial than another internal tool. Months later, we ended up with an early version of Bootstrap as a
+            way to document and share common design patterns and assets within the company.[3]
+
+            After a few months of development by a small group, many developers at Twitter began to contribute to the
+            project as a part of Hack Week, a hackathon-style week for the Twitter development team. It was renamed from
+            Twitter Blueprint to Bootstrap, and released as an open source project on August 19, 2011.[4] It has
+            continued to be maintained by Mark Otto, Jacob Thornton, and a small group of core developers, as well as a
+            large community of contributors </p>
+        <hr>
+    </div>
+
+    <div id="section2" class="container-fluid">
+        <h1 class="display-1">Versions</h1>
+        <h2 class="display-2">Bootstrap 2</h2>
+        <p> On January 31, 2012, Bootstrap 2 was released, which added built-in support for Glyphicons, several new
+            components, as well as changes to many of the existing components. This version supports responsive web
+            design, meaning the layout of web pages adjusts dynamically, taking into account the characteristics of the
+            device used (whether desktop, tablet, or mobile phone).
+        </p>
+        <h1 class="display-2">Bootstrap 3</h1>
+        <p>On August 19, 2013, Bootstrap 3, was released. It redesigned components to use flat design and a mobile first
+            approach. Bootstrap 3 features new plugin system with namespaced events. Bootstrap 3 dropped Internet
+            Explorer 7 and Firefox 3.6 support, but there is an optional polyfil for these browsers
+        </p>
+        <h1 class="display-2">Bootstrap 3</h1>
+        <p>
+            Mark Otto announced Bootstrap 4 on October 29, 2014.[8] The first alpha version of Bootstrap 4 was released
+            on August 19, 2015.[9] The first beta version was released on August 10, 2017.[10] Mark suspended work on
+            Bootstrap 3 on September 6, 2016, to free up time to work on Bootstrap 4. Bootstrap 4 was finalized on
+            January 18, 2018.[11]
+
+            Significant changes include:
+        <ul>
+            <li>Major rewrite of the code </li>
+            <li>Replacing Less with Sass</li>
+            <li>Addition of Reboot, a collection of element-specific CSS changes in a single file, based on
+                <code>Normalize</code>
+            </li>
+            <li>Dropping support for <a>IE8, IE9, and iOS 6</a></li>
+            <li><a>CSS Flexible Box </a>support</li>
+            <li>Adding navigation customization options</li>
+            <li>Adding responsive spacing and sizing utilities</li>
+            <li>Switching from the pixels unit in CSS to root ems</li>
+            <li>Increasing global font size from 14px to 16px for enhanced readability</li>
+            <li>Dropping the<small> panel, thumbnail, pager, </small>and well components</li>
+            <li>Dropping the Glyphicons icon font</li>
+            <li>Improved form styling, buttons, drop-down menus, media objects and image classes</li>
+        </ul>
+        Bootstrap 4 supports the latest versions of <a>Google Chrome, Firefox, Internet Explorer, Opera, and Safari</a>
+        (except
+        on Windows). It additionally supports back to IE10 and the latest <a>Firefox </a> Extended Support Release
+        (ESR).
+        </p>
+        <h1 class="display-2">Bootstrap 5</h1>
+        <p>Bootstrap 5 was officially released on May 5, 2021
+        <ul>
+            <li>New offcanvas menu component</li>
+            <li>Removing dependence on <a>jQuery</a> in favor of vanilla JavaScript</li>
+            <li>Rewriting the grid to support responsive gutters and columns placed outside of rows</li>
+            <li>Migrating the documentation from Jekyll to Hugo</li>
+            <li>Dropping support for <a>Internet Explorer</a></li>
+            <li>Moving testing infrastructure from <a>QUnit</a> to <a>Jasmine</a></li>
+            <li>Adding custom set of SVG icons</li>
+            <li>Adding CSS custom properties</li>
+            <li>Improved API</li>
+            <li>Enhanced grid system</li>
+            <li>Improved customizing docs</li>
+            <li>Updated forms</li>
+            <li>RTL support</li>
+        </ul>
+        </p>
+        <hr>
+    </div>
+    <div id="section3" class="container-fluid">
+        <h1 class="display-1">Features</h1>
+        <p>
+            Bootstrap is an HTML, CSS & JS Library that focuses on simplifying the development of informative web pages
+            (as opposed to web apps). The primary purpose of adding it to a web project is to apply Bootstrap's choices
+            of color, size, font and layout to that project. As such, the primary factor is whether the developers in
+            charge find those choices to their liking. Once added to a project, Bootstrap provides basic style
+            definitions for all HTML elements. The result is a uniform appearance for prose, tables and form elements
+            across web browsers. In addition, developers can take advantage of CSS classes defined in Bootstrap to
+            further customize the appearance of their contents. For example, Bootstrap has provisioned for light- and
+            dark-colored tables, page headings, more prominent pull quotes, and text with a highlight.
+
+            Bootstrap also comes with several JavaScript components in the form of jQuery plugins. They provide
+            additional user interface elements such as dialog boxes, tooltips, and carousels. Each Bootstrap component
+            consists of an HTML structure, CSS declarations, and in some cases accompanying JavaScript code. They also
+            extend the functionality of some existing interface elements, including for example an auto-complete
+            function for input fields.
+
+            Example of a webpage using Bootstrap framework
+            Example of a webpage using Bootstrap framework rendered in Firefox
+            The most prominent components of Bootstrap are its layout components, as they affect an entire web page. The
+            basic layout component is called "Container", as every other element in the page is placed in it. Developers
+            can choose between a fixed-width container and a fluid-width container. While the latter always fills the
+            width of the web page, the former uses one of the five predefined fixed widths, depending on the size of the
+            screen showing :
+        <ul>
+            <li>Smaller than 576 pixels</li>
+            <li>576–768 pixels</li>
+            <li>768–992 pixels</li>
+            <li>992–1200 pixels</li>
+            <li>Larger than 1200 pixels</li>
+        </ul>
+        </p>
+        <ol class="txt">
+            <li><strong> Easy to Begin With</strong><br>
+                It is pretty easy, to begin with. Being easy to get started with is probably the first
+                quality which makes Bootstrap very appealing.</li>
+
+
+            <li> <strong>LESS as Well as CSS Files</strong><br>
+                Bootstrap not only offers LESS files but also includes the old CSS files.</li>
+
+            <li><strong>Easily Customizable </strong><br>
+                Despite the fact that Bootstrap is designed in responsive 12-column grids, layouts, and
+                components, it is also very easy to customize. Whether you need a fixed grid or a responsive one, it can
+                be made possible by making a few changes. Offsetting and nesting of columns are also easy to do in both
+                CPU-based and mobile-based browser grids.</li>
+
+            <li><strong>Responsive Utility Classes</strong><br>
+                Another prominent feature of Bootstrap is its responsive utility classes. Using
+                responsive utility classes, a particular piece of content can be made to appear or hide only on devices
+                depending on the size of the screen being used. This feature is extremely helpful for designers who want
+                to make a mobile and tablet-friendly version of their websites.</li>
+
+            <li><strong>Drop-Down Component Menu</strong><br>
+                The drop-down component menu is a responsive additive feature of a website. To include
+                it in a website, a lot of different plugins, mostly Java-based, are tested. But, via Bootstrap and its
+                easy customizing options, this can easily be done in a matter of minutes.</li>
+
+            <ol class="txt">
+                Some of the components that come pre-styled in Bootstrap are:
+                <li>Drop-downs</li>
+                <li>Button</li>
+                <li>Navigation</li>
+                <li>Badges Alert</li>
+                <li>Progress Bar</li>
+            </ol>
+
+            <li><strong>Bootstrap Templates</strong><br>
+                The readily available templates make it easier for inexperienced users to create a
+                website following a simple tutorial or demo available on the Bootstrap.</li>
+
+        </ol>
+        <hr>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover({
+                container: 'body'
+            });
+        });
+        $(document).ready(function () {
+            $(document).ready(function () {
+                $('#btnSubmit').click(function () {
+                    $('#myAlert').show('fade');
+                })
+            })
+        })
+        $(document).ready(function () {
+            $(document).ready(function () {
+                $('#btnAlert').click(function () {
+                    $('#showAlert').show('fade');
+                })
+            })
+        })
+        
+        $('#downloadCompleted').click(function() {
+
+var timerId, percent;
+
+
+percent = 0;
+$('#downloadCompleted').attr('disabled', true);
+$('#load').css('width', '0px');
+$('#load').addClass('progress-bar-striped');
+
+timerId = setInterval(function() {
+
+  
+  percent += 5;
+  $('#load').css('width', percent + '%');
+  $('#load').html(percent + '%');
+
+
+  if (percent >= 100) {
+    clearInterval(timerId);
+    $('#downloadCompleted').attr('disabled', false);
+    $('#load').removeClass('progress-bar-striped');
+    $('#load').html('Download Completed');
+  }
+}, 200)
+})
+
+
+
+    </script>
+
+</body>
+
+</html>
